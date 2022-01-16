@@ -1,0 +1,186 @@
+:root{
+	--blue: #003e51;
+	--orange:#ff2c04;
+	--box-shadow: 0 .5rem 1.5rem rgb(0, 0, 0,.1)
+}
+
+
+* {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none; border: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top: 5.5em;
+	scroll-behavior: smooth;
+}
+
+.sub-heading {
+	color: var(--blue);
+	text-transform: uppercase;
+	font-size: 4rem;
+}
+
+.heading {
+	color: var(--blue);
+	text-transform: capitalize;
+	font-size: 1.5rem;
+}
+
+header {
+	position: fixed;
+	top: 0; left: 0; right: 0;	
+	background: var(--blue);
+	padding: 1rem 7%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+
+header .logo img {
+    width: 15rem;
+}
+
+header .navbar {    
+    margin-left: 2rem;
+}
+
+header .navbar a{
+    font-size: 1.5rem;   
+    padding: .5rem 1.5rem; 
+    color: #fff;
+}
+
+header .navbar a:hover {
+	color: var(--orange);	
+}
+
+header .button a {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    background-color: var(--orange);	
+}
+
+header .button a:hover {
+    padding-left: 2rem;
+}
+
+.home {
+	width: 100%;	
+	height: 65.5rem;
+	box-sizing: border-box;
+	text-align: center;	
+}
+
+.home .content {	
+    position: absolute;
+	margin-left: 30rem;    
+	display: block;    
+	padding-top: 24.6rem;
+	align-items: center;
+	color: #fff;
+}
+
+.home .content h3 {	    
+	text-transform: uppercase;			
+	font-size: 4rem;	
+}
+
+.home .content p {
+    text-transform: capitalize;
+	margin-top: 2.5rem;	
+	font-size: 2rem;		
+}
+
+.home .content .btn {	
+	margin-top: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;    
+    font-size: 1.5rem;		
+}
+
+.home .content .btn a{ 
+    color: #fff;       
+    padding: 1rem 1.5rem;
+    background-color: var(--orange);	
+}
+
+.home .content .btn a:hover {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.home .content .arrow {
+	margin-top: 20rem;
+}
+
+.home .content .arrow img {
+	height: 6rem;
+	width: 6rem;
+}
+
+.home .image img {        
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.operation {
+	margin-top: 9rem;
+}
+
+.operation h3, .operation p {
+	text-align: center;
+}
+
+.operation p {
+	margin-top: 2.5rem;
+}
+
+.operation .box-container {
+	display: flex;	
+}
+
+.operation .box-container .box {
+	margin-top: 2.5rem;	
+	height: 20rem;
+	width: 20rem;
+	margin-left: 15rem;	
+}
+
+.operation .box-container .box .underlind {
+	position: absolute;
+	height: 7rem;
+	width: 33.8rem;
+	background-color: var(--orange);
+	margin-top: 30rem;	
+}
+
+.operation .box-container .box .content {
+	position: absolute;	
+	display: flex;			
+	margin-top: -2rem;
+	margin-left: 8rem;
+}
+
+.operation .box-container .box .content i {
+	font-size: 3rem;
+	color: #fff;
+}
+
+.operation .box-container .box .content h3 {
+	margin-top: 1rem;
+	margin-left: .5rem;
+	font-size: 2rem;
+	color: #fff;
+}
