@@ -46,6 +46,10 @@ header {
 	z-index: 1000;
 }
 
+header .logo {
+	cursor: pointer;
+}
+
 header .logo img {
     width: 15rem;
 }
@@ -155,7 +159,8 @@ header .button a:hover {
 	margin-top: 2.5rem;	
 	height: 20rem;
 	width: 20rem;
-	margin-left: 15rem;	
+	margin-left: 15rem;
+	cursor: pointer;
 }
 
 .operation .box-container .box .underlind {
@@ -183,4 +188,105 @@ header .button a:hover {
 	margin-left: .5rem;
 	font-size: 2rem;
 	color: #fff;
+}
+
+.about {
+	width: 100%;	
+	height: 65.5rem;
+	margin-top: 22rem;
+}
+
+.about .content {	
+    position: absolute;
+	margin-left: 10rem;    
+	display: block;    
+	padding-top: 20rem;
+	color: #fff;	
+}
+
+.about .content h3 {	    
+	text-transform: uppercase;			
+	font-size: 4rem;
+	text-align: left;	
+}
+
+.about .content p {
+    text-transform: capitalize;
+	margin-top: 2.5rem;
+	font-size: 2rem;
+	text-align: left;
+}
+
+.about .content .btn {	
+	margin-top: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;    
+    font-size: 1.5rem;		
+}
+
+.about .content .btn a{ 
+    color: #fff;       
+    padding: 1rem 1.5rem;
+    background-color: var(--orange);	
+}
+
+.about .content .btn a:hover {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.about .content .logo {
+	margin-top: 15rem;	
+}
+
+.about .content .logo img {
+	height: 6rem;
+	width: 27rem;
+	margin-left: 40rem;
+}
+
+.about .image img {
+	width: 100%;
+	height: 70rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.review {
+	margin-top: 6rem;
+}
+
+.review .box-container { 
+	padding:2rem 9%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+	gap:1.5rem;
+}
+.review .box-container .box {
+	padding:2.5rem;
+	background: #fff;
+	border:.1rem solid rgba(0,0,0,.2);
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+.review .box-container .box .content {
+	margin-top: .5rem;
+	text-align: justify;
+	padding:2rem;
+	padding-top: 0;
+}
+
+.review .box-container .box .content h3 {
+	color: #000;
+	font-size: 2.5rem;
+}
+
+.review .box-container .box .content p {
+	margin-top: 1rem;
+	color: #000;
+	font-size: 1.6rem;
+	padding:1.5rem 0;
+	line-height: 1.5;
 }
