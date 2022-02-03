@@ -24,14 +24,22 @@ html {
 }
 
 .sub-heading {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 	color: var(--blue);
 	text-transform: uppercase;
+	text-align: center;
 	font-size: 4rem;
 }
 
 .heading {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 	color: var(--blue);
 	text-transform: capitalize;
+	text-align: center;
 	font-size: 1.5rem;
 }
 
@@ -79,19 +87,25 @@ header .icons i:hover {
     color: var(--orange);
 }
 
-.home {
-	width: 100%;	
-	height: 65.5rem;
-	box-sizing: border-box;
-	text-align: center;	
+#home {
+	background-image: url(../images/home-image.png);	
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.home .content {	
-    position: absolute;
-	margin-left: 30rem;    
-	display: block;    
+.home {
+	width: 100%;	
+	height: 70rem;
+	box-sizing: border-box;
+	text-align: center;	
+	
+}
+
+#home .content {		
+    position: relative;
+	margin-left: auto;
+	margin-right: auto;  
 	padding-top: 24.6rem;
-	align-items: center;
 	color: #fff;
 }
 
@@ -153,13 +167,24 @@ header .icons i:hover {
 .operation .box-container {
 	display: flex;	
 }
-
+/*
+#operation .box-container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
 .operation .box-container .box {
 	margin-top: 2.5rem;	
 	height: 20rem;
 	width: 20rem;
 	margin-left: 15rem;
 	cursor: pointer;
+}
+
+.operation .box-container .box .image img {
+	height: 31rem;
+	width: 33.8rem;
 }
 
 .operation .box-container .box .underlind {
@@ -173,8 +198,8 @@ header .icons i:hover {
 .operation .box-container .box .content {
 	position: absolute;	
 	display: flex;			
-	margin-top: -2rem;
-	margin-left: 8rem;
+	margin-top: .5rem;
+	margin-left: 6rem;
 }
 
 .operation .box-container .box .content i {
@@ -191,12 +216,18 @@ header .icons i:hover {
 
 .about {
 	width: 100%;	
-	height: 65.5rem;
+	height: 70rem;
 	margin-top: 22rem;
 }
 
+#about {
+	background: url(../images/sobre-nos-img.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}	
+
 .about .content {	
-    position: absolute;
+    position: relative;
 	margin-left: 10rem;    
 	display: block;    
 	padding-top: 20rem;
@@ -216,49 +247,22 @@ header .icons i:hover {
 	text-align: left;
 }
 
-.about .content .btn {	
-	margin-top: 4rem;
-    text-transform: uppercase;
-    font-weight: bold;    
-    font-size: 1.5rem;		
-}
-
-.about .content .btn a{ 
-    color: #fff;       
-    padding: 1rem 1.5rem;
-    background-color: var(--orange);	
-}
-
-.about .content .btn a:hover {
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
-
-.about .content .logo {
-	margin-top: 15rem;	
-}
-
-.about .content .logo img {
+.about .logo img {	
+	margin: 10rem;
+	margin-left: 50rem;	
 	height: 6rem;
-	width: 27rem;
-	margin-left: 40rem;
-}
-
-.about .image img {
-	width: 100%;
-	height: 70rem;
-	background-repeat: no-repeat;
-	background-size: cover;
+	width: 27rem;	
 }
 
 .review {
 	padding:2rem 5%;
-	margin-top: 7rem;
+	margin-top: 5rem;
 }
 
 .review .box-container {
-	display: flex;		
-	padding-bottom: 7rem;	
+	display: flex;	
+	padding-top: 5rem;	
+	padding-bottom: 3rem;	
 }
 
 .review .box-container .box {	
@@ -286,29 +290,38 @@ header .icons i:hover {
 
 
 .review .box-container .box .content h3 {
-	color: #000;
+	color: var(--blue);
 	font-size: 2.5rem;	
 	padding-bottom: .5rem;
 }
 
 .review .box-container .box .content p {
-	color: #000;
+	color: var(--blue);
 	font-size: 1.6rem;
 }
 
 .footer {	
 	background-color: var(--blue);
+	padding: 3rem;	
 }
 
 .footer .box-container {	
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-	gap:1.5rem;		
+	gap:1.5rem;	
+}
+
+.footer .box-container .box {	
+	margin-left: 20%;	
+}
+
+.footer .box-container .box img {
+	margin-bottom: 1.5rem;
 }
 
 .footer .box-container .box a {
 	color: #fff;
-	display: inline-block;
+	display: block;
 	padding-top: 1rem;
 	padding-bottom: .5rem;
 	font-size: 1.5rem;
@@ -316,6 +329,7 @@ header .icons i:hover {
 
 .footer .box-container .box h3,	.footer .box-container .box p {
 	text-align: left;
+	padding-bottom: 1rem;	
 }
 
 .footer .box-container .box h3 {	
@@ -338,4 +352,139 @@ header .icons i:hover {
 	padding:.5rem;
 	padding-top: 1.5rem;
 	margin-top: 1.5rem;
+}
+
+@media screen and (max-width:1440px) {
+	
+	
+	.home .content {
+		margin-left: 40rem;		
+	}
+	
+
+}
+
+@media screen and (max-width: 1024px) {
+
+	* {
+		max-width: 1024px;		
+	}
+
+	html {
+		font-size: 55%;		
+		width: 100%;
+	}
+
+	header {
+		padding: 1rem 2rem;
+		width: 100%;
+	}
+
+	header .icons i, header .icons a {		
+		height: 3rem;
+		width: 3rem;
+		text-align: center;
+		font-size: 1.5rem;			
+	}
+
+	.operation {
+		margin-top: 3rem;				
+		width: 1024px;
+	}
+	
+	.operation h3, .operation p {
+		text-align: center;
+	}
+	
+	.operation p {
+		margin-top: 2.5rem;
+	}
+	
+	#operation .box-container {				
+		display: flex;
+		margin-left: -8rem;
+	}	
+	
+	.about {
+		width: 1024px;		
+	}
+
+	.about .logo img {			
+		margin-left: 45rem;			
+	}
+	
+	.review {
+		padding: 2rem 5%;		
+		width: 1024px;
+	}
+	
+	.review .box-container {
+		display: inline-block;	
+		width: 100%;
+		padding-bottom: 2.5rem;
+	}
+	
+	.review .box-container .box {
+		height: 25rem;
+		width: 95%;		
+	}
+	
+	.review .box-container .box .content {	
+		display: inline-block;	
+		padding:2rem;
+		padding-top: 0;
+		position: relative;
+		text-align: justify;
+		padding:2rem;
+		margin-left: 0;	
+	}
+	
+	.review .box-container .box .content h3 {		
+		font-size: 2.5rem;
+	}
+	
+	.review .box-container .box .content p {
+		margin-top: 1rem;
+		font-size: 1.6rem;
+		padding:1.5rem 0;
+		line-height: 1.5;
+	}
+
+	.footer {	
+		background-color: var(--blue);
+		width: 1024px;		
+	}
+	
+	.footer .box-container {		
+		width: 85%;
+	}
+
+	.footer .box-container .box {	
+		margin-left: 15rem;
+	}
+	
+	.footer .credit {		
+		font-size:2rem;		
+		padding:.5rem;
+		padding-top: 3rem;
+		margin-top: 6rem;
+	}
+
+
+}
+
+@media screen and (max-width: 728px) { 
+
+	* {
+		max-width: 728px;		
+	}
+
+	html {				
+		width: 100%;
+	}
+
+	header {
+		width: 100%;
+	}
+
 }

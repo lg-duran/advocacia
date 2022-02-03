@@ -19,9 +19,9 @@
         <a class="logo"><img src="images/logo.png"></a>
 
         <nav class="navbar">
-            <a href="#">ínicio</a>
-            <a href="#">sobre nós</a>
-            <a href="#">depoimentos</a>
+            <a href="#home">ínicio</a>
+            <a href="#about">sobre nós</a>
+            <a href="#review">depoimentos</a>
         </nav>
 
         <div class="icons">
@@ -35,7 +35,7 @@
 
     <!--home section stars-->
 
-    <section class="home">        
+    <section class="home" id="home">        
 
         <div class="content">
             <h3>um novo conceito de advocacia</h3>
@@ -47,11 +47,7 @@
             <div class="arrow">
                 <img src="images/arrow.png">
             </div>
-        </div>
-
-        <div class="image">
-            <img src="images/home-image.png">
-        </div>
+        </div>       
 
     </section>
 
@@ -59,67 +55,69 @@
 
     <!--operation section stars-->
 
-    <section class="operation">
+        <section class="operation" id="operation">
+            
+            <h3 class="sub-heading">áreas de atuação</h3>
+            <p class="heading">O Escritório Advocacia e Consultoria proporciona aos seus clientes tranquilidade,<br>
+                proteção e segurança para a tomada de decisões<br>
+                e resolução de seus conflitos.</p>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="underlind">
+
+                    </div>
+                    <div class="image">
+                        <img src="images/diretio-img-1.png">
+                    </div>
+                    <div class="content">
+                        <div class="icons">
+                            <i class="fas fa-suitcase"></i>
+                        </div>
+                        <h3>Direito Empresarial</h3>                    
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="underlind">
+                        
+                    </div>
+                    <div class="image">
+                        <img src="images/direito-img-2.png">
+                    </div>
+                    <div class="content">
+                        <div class="icons">
+                            <i class="fas fa-file-signature"></i>
+                        </div> 
+                        <h3>Direito tributário</h3>                                          
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="underlind">
+                        
+                    </div>
+                    <div class="image">
+                        <img src="images/direito-img-3.png">
+                    </div>
+                    <div class="content">
+                        <div class="icons">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Direito Civil</h3>                                        
+                    </div>
+                </div>
+
+            </div>  
         
-        <h3 class="sub-heading">áreas de atuação</h3>
-        <p class="heading">O Escritório Advocacia e Consultoria proporciona aos seus clientes tranquilidade,<br>
-            proteção e segurança para a tomada de decisões<br>
-            e resolução de seus conflitos.</p>
-
-        <div class="box-container">
-
-            <div class="box">
-                <div class="underlind">
-
-                </div>
-                <div class="image">
-                    <img src="images/diretio-img-1.png">
-                </div>
-                <div class="content">
-                    <div class="icons">
-                        <i class="fas fa-suitcase"></i>
-                    </div>
-                    <h3>Direito Empresarial</h3>                    
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="underlind">
-                    
-                </div>
-                <div class="image">
-                    <img src="images/direito-img-2.png">
-                </div>
-                <div class="content">
-                    <div class="icons">
-                        <i class="fas fa-file-signature"></i>
-                    </div> 
-                    <h3>Direito tributário</h3>                                          
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="underlind">
-                    
-                </div>
-                <div class="image">
-                    <img src="images/direito-img-3.png">
-                </div>
-                <div class="content">
-                    <div class="icons">
-                        <i class="fas fa-balance-scale"></i>
-                    </div>
-                    <h3>Direito Civil</h3>                                        
-                </div>
-            </div>
-
-        </div>  
+        </section>    
         
         <!--operation section ends-->
 
         <!--about section stars-->
 
-        <section class="about">
+        <section class="about" id="about">
             
             <div class="content">
                 <h3>sobre nós</h3>
@@ -141,16 +139,14 @@
                     principalmente nas áreas de Direito Empresarial,
                     Direito Civil e Direito Tributário.
 
-                </p>
+                </p>                
                 
-                <div class="logo">
-                    <img src="images/logo.png">
-                </div>
             </div>
-    
-            <div class="image">
-                <img src="images/sobre-nos-img.png">
+
+            <div class="logo">
+                <img src="images/logo.png">
             </div>
+                
 
         </section>
 
@@ -158,7 +154,7 @@
 
         <!--review section stars-->
 
-        <section class="review">
+        <section class="review" id="review">
 
             <h3 class="sub-heading">depoimentos</h3>
             <p class="heading">veja o que alguns de nossos clientes dizem sobre nós</p>
@@ -245,13 +241,11 @@
         
             </div>
         
-            <div class="credit"> copyrigth @ 2021 by <span> Lucas Lopes Duran </span> </div>
+            <div class="credit"> copyrigth @ 2021 by Lucas Lopes Duran </div>
 
         </section>
 
-        <!--footer section ends-->
-
-        
+    <!--footer section ends-->
 
     
 </body>

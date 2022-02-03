@@ -26,9 +26,13 @@ section {
 
 
 .sub-heading {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;	
+	text-align: center;
 	text-transform: uppercase;
 	font-size: 4rem;
-	text-align: center;
+	
 }
 
 header {
@@ -75,15 +79,14 @@ header .icons i:hover, header .icons a:hover {
 
 .home {	
 	width: 100%;	
-	height: 65.5rem;
+	height: 70rem;
 	box-sizing: border-box;
 	text-align: center;	
 }
 
 .home .content {
-	justify-content: space-between;	
-    position: absolute;
-    margin-left: 35rem;
+    position: absolute;	    
+	margin-left: 38rem;
 	display: block;    
 	padding-top: 24.6rem;
 	align-items: center;
@@ -91,11 +94,13 @@ header .icons i:hover, header .icons a:hover {
 }
 
 .home .content h3 {	
+	text-align: center;
 	text-transform: uppercase;			
 	font-size: 4rem;	
 }
 
 .home .content p {
+	text-align: center;
     text-transform: capitalize;
 	margin-top: 4rem;		
 	margin-bottom: 3rem;
@@ -120,7 +125,7 @@ header .icons i:hover, header .icons a:hover {
 	background-color: #ffbb00;
 }
 
-.home .image img {   
+.home .image img {	
 	width: 100%;     
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -169,6 +174,10 @@ header .icons i:hover, header .icons a:hover {
 	width: 100%;	
 	height: 65.5rem;
 	margin-top: 5rem;	
+}
+
+.about img {
+	width: 100%;
 }
 
 .about .content {	
@@ -253,6 +262,122 @@ header .icons i:hover, header .icons a:hover {
 
 
 /* media queries */
+
+@media screen and (max-width: 1440px) { 
+
+	.home .content {
+		margin-left: 42rem;		
+	}
+
+}
+
+@media screen and (max-width: 1024px) { 
+
+	* {
+		max-width: 1024px;		
+	}
+
+	html {
+		font-size: 55%;
+		max-width: 64rem;
+		width: 100%;
+	}
+
+	header {
+		padding: 1rem 2rem;
+		width: 100%;
+	}
+
+	header .icons i, header .icons a {		
+		height: 3rem;
+		width: 3rem;
+		text-align: center;
+		font-size: 1.5rem;
+		color: #000;	
+	}
+
+	.home {	
+		width: 1024px;	
+		height: 60rem;
+		box-sizing: border-box;
+		text-align: center;	
+	}
+	
+	.home .content {			
+		margin-left: 29rem;		
+	}
+
+	.home .image img {
+		margin-left: 0;
+	}
+
+	.review {		
+		margin-top: 3rem;		
+	}	
+	
+	.sub-heading {	
+		text-align: center;		
+		white-space: nowrap;
+		font-size: 3rem;
+		margin-bottom: 5rem;
+	}
+	
+	.review .box-container { 		
+		width: 1024px;	
+	}
+	
+	.review .box-container .box {
+		padding:2rem;
+		
+	}
+
+	.review .image img {
+		width: 993px;
+	}
+	
+	.about {
+		width: 993px;	
+		height: 60rem;
+		margin-top: 5rem;	
+	}
+	
+	.about .image img {
+		width: 1024px;		
+	}
+	
+	.about .content {	
+		position: absolute;	 
+		padding-top: 15rem;
+		color: #fff;	
+	}
+
+	.situation {		
+		margin-top: 5rem;		
+	}
+	
+	.situation .box-container {
+		display: inline-block;	
+		width: 980px;
+		padding-bottom: 2.5rem;
+	}
+	
+	.situation .box-container .box {
+		height: 25rem;
+		width: 100%;
+		margin-bottom: 2rem;	
+		background: #fff;
+		border:.1rem solid rgba(0,0,0,.2);
+	}
+
+	.footer {
+		width: 1024px;
+	}
+	
+	
+}
+
+
+
 
 @media (max-width: 991px) {
 
