@@ -62,7 +62,7 @@ header .logo img {
     width: 15rem;
 }
 
-header .navbar {    
+header .navbar {  	  
     margin-left: 2rem;
 }
 
@@ -85,6 +85,10 @@ header .icons i {
 
 header .icons i:hover {
     color: var(--orange);
+}
+
+header .icons #menu-bars {
+	display: none;
 }
 
 #home {
@@ -152,8 +156,12 @@ header .icons i:hover {
 	background-size: cover;	
 }
 
-.operation {
+.operation {	
 	margin-top: 9rem;
+}
+
+#operation {
+	width: 100%;
 }
 
 .operation h3, .operation p {
@@ -167,13 +175,7 @@ header .icons i:hover {
 .operation .box-container {
 	display: flex;	
 }
-/*
-#operation .box-container {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-}
-*/
+
 .operation .box-container .box {
 	margin-top: 2.5rem;	
 	height: 20rem;
@@ -214,13 +216,14 @@ header .icons i:hover {
 	color: #fff;
 }
 
-.about {
-	width: 100%;	
+.about {		
 	height: 70rem;
+	box-sizing: border-box;
 	margin-top: 22rem;
 }
 
 #about {
+	width: 100%;
 	background: url(../images/sobre-nos-img.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -254,9 +257,13 @@ header .icons i:hover {
 	width: 27rem;	
 }
 
-.review {
+.review {	
 	padding:2rem 5%;
 	margin-top: 5rem;
+}
+
+#review {
+	width: 100%;
 }
 
 .review .box-container {
@@ -300,9 +307,13 @@ header .icons i:hover {
 	font-size: 1.6rem;
 }
 
-.footer {	
+.footer {		
 	background-color: var(--blue);
 	padding: 3rem;	
+}
+
+#footer {
+	width: 100%;
 }
 
 .footer .box-container {	
@@ -360,6 +371,10 @@ header .icons i:hover {
 	.home .content {
 		margin-left: 40rem;		
 	}
+
+	.operation .box-container {
+		margin-left: 5rem;
+	}
 	
 
 }
@@ -377,7 +392,7 @@ header .icons i:hover {
 
 	header {
 		padding: 1rem 2rem;
-		width: 100%;
+		width: 1024px;
 	}
 
 	header .icons i, header .icons a {		
@@ -408,7 +423,7 @@ header .icons i:hover {
 	.about {
 		width: 1024px;		
 	}
-
+	
 	.about .logo img {			
 		margin-left: 45rem;			
 	}
@@ -473,18 +488,105 @@ header .icons i:hover {
 
 }
 
-@media screen and (max-width: 728px) { 
-
-	* {
-		max-width: 728px;		
-	}
-
-	html {				
-		width: 100%;
-	}
+@media screen and (max-width: 768px) {
 
 	header {
+		width: 768px;
+	}
+
+	header .navbar {  	  
+		margin-left: 1.5rem;
+	}
+
+	header .icons #menu-bars {
+		display: inline-block;
+	}
+
+	header .navbar {
+		position: absolute;
+		top: 100%; left: 0; right: 0;
+		background: #fff;
+		border-top: .1rem solid rgba(0,0,0,.2);
+		border-bottom: .1rem solid rgba(0,0,0,.2);
+		padding: 1rem; 		
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+
+	header .navbar.active {
+		margin-left: 0;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+
+	header .navbar a {
+		display: block;
+		padding: 1.5rem;
+		margin: 1rem;
+		font-size: 2rem;
+		background: var(--blue);		
+	}
+	
+	#operation .box-container {
+		display: block;	
+		margin-left: -30rem;
+	}
+
+	.operation .box-container .box {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 13rem;		
+	}
+
+	.operation .box-container .box .image img {
+		width: 50rem;
+		box-sizing: border-box;
+		background-size: cover;
+	}
+
+	.operation .box-container .box .underlind {		
+		height: 7rem;
+		width: 50rem;
+		background-color: var(--orange);
+		margin-top: 24rem;	
+	}
+	
+	.operation .box-container .box .content {
+		position: relative;		
+		margin-top: -6rem;
+		margin-left: 9rem;
+	}
+	
+	.operation .box-container .box .content i {
+		font-size: 4rem;		
+	}
+	
+	.operation .box-container .box .content h3 {		
+		font-size: 2.5rem;
+		margin-left: .5rem;
+		white-space: nowrap;
+	}
+
+	.about .logo img {
+		margin-top: 3rem;			
+		margin-left: 30rem;			
+	}
+	
+}
+
+@media screen and (max-width:425px) {
+
+	
+	html {
+		font-size: 50%;		
 		width: 100%;
 	}
+	
+
+	header {
+		width: 425px;
+	}
+
+	
+	
 
 }
