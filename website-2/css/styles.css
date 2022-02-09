@@ -312,6 +312,7 @@ header .icons #menu-bars {
 }
 
 #footer {
+
 	width: 100%;
 }
 
@@ -585,7 +586,50 @@ header .icons #menu-bars {
 		width: 425px;
 	}
 
+	.home {
+		height: 80rem;
+	}
+
+	.operation .box-container .box .image img {
+		width: 40rem;		
+		margin-left: 5rem;
+	}
+
+	.operation .box-container .box .underlind {		
+		width: 40rem;
+		margin-left: 5rem;
+	}
 	
+	.operation .box-container .box .content {
+		position: relative;		
+		margin-top: -6rem;
+		margin-left: 9rem;
+	}
+
+	.about .content {	
+		margin-left: 5rem;    
+		padding-top: 10rem;
 	
+	}
+
+	.about .logo img {	
+		margin-top: 4rem;
+		margin-left: 15rem;
+	}
+
+	.review .box-container {
+		margin-left: -1rem;		
+	}
+
+	.review .box-container .box {
+		height: 35rem;
+	}
+
+	
+	.footer .box-container .box {	
+		margin-left: 25%;	
+	}
+	
+
 
 }
