@@ -77,6 +77,10 @@ header .icons i:hover, header .icons a:hover {
 	color: var(--yellow);	
 }
 
+header .icons #menu-bars {
+	display: none;
+}
+
 #home {
 	background-image: url(../images/home-image.png);	
 	background-size: cover;
@@ -194,8 +198,13 @@ header .icons i:hover, header .icons a:hover {
 	margin-top: 5rem;	
 }
 
-.about img {
+#about {
 	width: 100%;
+}
+
+#about img {
+	width: 1440px;
+	margin-left: -1rem;	
 }
 
 .about .content {	
@@ -224,14 +233,19 @@ header .icons i:hover, header .icons a:hover {
 	margin-top: 10rem;
 }
 
-.situation .box-container {
+#situation {
+	width: 100%;
+}
+
+.situation .box-container {	
 	display: inline-block;	
 	width: 100%;
+	padding-top: 2.5rem;
 	padding-bottom: 2.5rem;
 }
 
 .situation .box-container .box {
-	height: 25rem;
+	height: 20rem;
 	width: 100%;
 	margin-bottom: 2rem;	
 	background: #fff;
@@ -239,6 +253,7 @@ header .icons i:hover, header .icons a:hover {
 }
 
 .situation .box-container .box .content {	
+	margin-top: 1.5rem;
 	text-align: justify;
 	padding:2rem;
 	padding-top: 0;
@@ -409,9 +424,6 @@ header .icons i:hover, header .icons a:hover {
 	
 }
 
-
-
-
 @media (max-width: 991px) {
 
 	html {
@@ -428,9 +440,115 @@ header .icons i:hover, header .icons a:hover {
 
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width:768px) {
 
+	header {
+		width: 768px;
+	}
 	
+	header .navbar {  	  
+		margin-left: 1.5rem;
+	}
+
+	header .icons #menu-bars {
+		display: inline-block;
+	}
+
+	header .navbar {
+		position: absolute;
+		top: 100%; left: 0; right: 0;
+		background: #fff;
+		border-top: .1rem solid rgba(0,0,0,.2);
+		border-bottom: .1rem solid rgba(0,0,0,.2);
+		padding: 1rem; 		
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+
+	header .navbar.active {
+		margin-left: 0;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+
+	header .navbar a {
+		display: block;
+		color: #fff;
+		padding: 1.5rem;
+		margin: 1rem;
+		font-size: 2rem;
+		background: var(--yellow);		
+	}
+
+	#home {
+		width: 768px;
+	}
+
+	#review {
+		width: 768px;
+	}
+
+	.review .sub-heading {
+		margin-left: 1.5rem;
+	}
+	
+	.review .box-container {	
+		display: inline-block;	
+		width: 100%;
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
+	
+	.review .box-container .box {
+		height: 25rem;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+	
+	.review .box-container .box .content {	
+		margin-top: 1.5rem;
+		text-align: justify;
+		padding:2rem;
+		padding-top: 0;
+	}	
+
+	#about {
+		width: 768px;
+	}
+
+	#about img {
+		width: 773px;
+		margin-left: -2.5rem;
+	}
+
+	.about .content {
+		margin-top: -10rem;
+		margin-left: 3rem;
+	}
+
+	.situation {
+		margin-top: -10rem;
+
+	}
+
+	.situation .sub-heading {
+		margin-left: 8rem;
+	}
+
+	.situation .box-container {
+		margin-left: 2rem;
+	}
+
+	.situation .box-container .box {
+		width: 70%;
+		height: 22rem;
+	}
+
+	.situation .box-container .box .content {
+		margin-top: -1rem;
+	}
+
+	.footer {
+		width: 768px;
+	}
 
 }
 
