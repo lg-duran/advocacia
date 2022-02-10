@@ -82,6 +82,7 @@ header .icons #menu-bars {
 }
 
 #home {
+	width: 100%;
 	background-image: url(../images/home-image.png);	
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -102,15 +103,6 @@ header .icons #menu-bars {
 	color: #fff;
 }
 
-/*
-.home .content {
-    position: absolute;	    	
-	display: block;    
-	padding-top: 24.6rem;
-	align-items: center;
-	color: #fff;
-}
-*/
 .home .content h3 {	
 	text-align: center;
 	text-transform: uppercase;			
@@ -142,13 +134,7 @@ header .icons #menu-bars {
 .home .content .btn a:hover {
 	background-color: #ffbb00;
 }
-/*
-.home .image img {	
-	width: 100%;     
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-*/
+
 .review {
 	margin-top: 5rem;
 }
@@ -424,7 +410,7 @@ header .icons #menu-bars {
 	
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
 
 	html {
 		font-size: 55%;
@@ -552,11 +538,84 @@ header .icons #menu-bars {
 
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
 
 	html {
 		font-size: 50%;
-	}	
-
+	}
 	
+}
+
+@media screen and (max-width: 425px) {
+
+	html {
+		width: 100%;
+	}
+
+	header {
+		width: 425px;
+	}
+
+	#home {
+		width: 425px;		
+	}
+
+	#home .content {		
+		padding-top: 20rem;
+	}
+
+	#review {
+		width: 425px;
+	}
+
+	.review .sub-heading {
+		font-size: 2.5rem;			
+	}
+
+	.review .box-container .box .content {
+		margin-top: -0.5rem;
+		margin-left: -1.5rem;
+	}
+
+	#about {
+		width: 425px;
+		margin-top: -5rem;
+		margin-bottom: 5rem;
+	}
+
+	#about img {
+		width: 425px;
+		height: 50rem;
+	}
+
+	.about .content {
+		margin-top: -12.5rem;
+		margin-left: 2rem;
+	}
+
+	.situation {
+		width: 425px;
+	}
+
+	.situation .sub-heading {
+		font-size: 2.5rem;
+		white-space: normal;
+		margin-left: 2rem;
+	}
+
+	.situation .box-container {			
+		width: 100%;		
+		box-sizing: border-box;
+	}
+
+	.situation .box-container .box{
+		width: 80%;
+		margin-left: 3rem;
+		height: 36.5rem;
+	}
+
+	.footer {
+		width: 425px;
+	}
+
 }
