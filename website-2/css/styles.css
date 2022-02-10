@@ -608,7 +608,6 @@ header .icons #menu-bars {
 	.about .content {	
 		margin-left: 5rem;    
 		padding-top: 10rem;
-	
 	}
 
 	.about .logo img {	
@@ -627,6 +626,40 @@ header .icons #menu-bars {
 	
 	.footer .box-container .box {	
 		margin-left: 25%;	
+	}
+
+}
+
+@media screen and (max-width:375px) {
+
+	html {
+		width: 100%;
+	}
+
+	header {
+		width: 375px;
+	}
+
+	.about .content {	
+		margin-left: 2.5rem;    
+		padding-top: 5rem;
+	}
+
+	.about .logo img {
+		margin-top: 6rem;
+		margin-left: 10rem;
+	}
+
+	.review .box-container {
+		margin-left: -1rem;		
+	}
+
+	.review .box-container .box {
+		height: 39rem;
+	}
+
+	#footer {
+		width: 375px;
 	}
 
 }
