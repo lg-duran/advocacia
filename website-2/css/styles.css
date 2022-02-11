@@ -364,6 +364,11 @@ header .icons #menu-bars {
 	margin-top: 1.5rem;
 }
 
+
+
+
+
+
 @media screen and (max-width:1440px) {
 	
 	
@@ -662,4 +667,81 @@ header .icons #menu-bars {
 		width: 375px;
 	}
 
+}
+
+@media screen and (max-width:320px) {
+
+	html {
+		width: 100%;
+	}
+
+	.heading {
+		font-size: 1.5rem;
+		white-space: nowrap;
+	}
+
+	header {
+		width: 320px;
+	}
+
+	.home .content p {
+		font-size: 1.5rem;
+	}
+
+	.operation {
+		margin-bottom: 1rem;
+	}
+
+	.operation .box-container .box .image img {
+		width: 35rem;		
+		margin-left: 7.5rem;
+	}
+
+	.operation .box-container .box .underlind {		
+		width: 35rem;		
+		margin-left: 7.5rem;
+	}
+
+	.about .content {	
+		margin-left: 2rem;
+		padding-top: 4rem;
+	}
+
+	.about .logo img {
+		margin-top: 2rem;
+		margin-left: 6rem;
+	}
+
+	.review {
+		margin-top: 2rem;
+	}
+
+	.review .sub-heading {
+		padding-bottom: 1rem;
+	}
+
+	.review .heading {
+		white-space: normal;
+	}
+
+	.review .box-container {
+		margin-left: -1.5rem;		
+	}
+
+	.review .box-container .box {
+		height: 46rem;
+	}
+
+	#footer {
+		width: 320px;
+	}
+
+	.footer .box-container .box img {
+		margin-left: -2.5rem;
+	}
+
+	.footer .credit {
+		font-size: 1.5rem;
+	}
+	
 }
