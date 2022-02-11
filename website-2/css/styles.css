@@ -178,8 +178,8 @@ header .icons #menu-bars {
 .operation .box-container .box {
 	margin-top: 2.5rem;	
 	height: 20rem;
-	width: 20rem;
-	margin-left: 15rem;
+	width: 20rem;	
+	margin-left: 15rem;	
 	cursor: pointer;
 }
 
@@ -444,7 +444,7 @@ header .icons #menu-bars {
 	}
 	
 	.review .box-container .box {
-		height: 25rem;
+		height: 100%;
 		width: 95%;		
 	}
 	
@@ -623,11 +623,6 @@ header .icons #menu-bars {
 	.review .box-container {
 		margin-left: -1rem;		
 	}
-
-	.review .box-container .box {
-		height: 35rem;
-	}
-
 	
 	.footer .box-container .box {	
 		margin-left: 25%;	
@@ -657,10 +652,6 @@ header .icons #menu-bars {
 
 	.review .box-container {
 		margin-left: -1rem;		
-	}
-
-	.review .box-container .box {
-		height: 39rem;
 	}
 
 	#footer {
@@ -726,10 +717,6 @@ header .icons #menu-bars {
 
 	.review .box-container {
 		margin-left: -1.5rem;		
-	}
-
-	.review .box-container .box {
-		height: 46rem;
 	}
 
 	#footer {
