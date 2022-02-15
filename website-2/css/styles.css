@@ -12,7 +12,6 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	outline: none; border: none;
-	text-transform: capitalize;
 	transition: all .2s linear;
 }
 
@@ -28,7 +27,6 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	color: var(--blue);
-	text-transform: uppercase;
 	text-align: center;
 	font-size: 4rem;
 }
@@ -38,7 +36,6 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	color: var(--blue);
-	text-transform: capitalize;
 	text-align: center;
 	font-size: 1.5rem;
 }
@@ -113,12 +110,10 @@ header .icons #menu-bars {
 }
 
 .home .content h3 {	    
-	text-transform: uppercase;			
 	font-size: 4rem;	
 }
 
 .home .content p {
-    text-transform: capitalize;
 	margin-top: 2.5rem;	
 	font-size: 2rem;		
 }
@@ -199,7 +194,7 @@ header .icons #menu-bars {
 .operation .box-container .box .content {
 	position: absolute;	
 	display: flex;			
-	margin-top: .5rem;
+	margin-top: -.5rem;
 	margin-left: 6rem;
 }
 
@@ -237,13 +232,11 @@ header .icons #menu-bars {
 }
 
 .about .content h3 {	    
-	text-transform: uppercase;			
 	font-size: 4rem;
 	text-align: left;	
 }
 
 .about .content p {
-    text-transform: capitalize;
 	margin-top: 2.5rem;
 	font-size: 2rem;
 	text-align: left;
@@ -263,6 +256,10 @@ header .icons #menu-bars {
 
 #review {
 	width: 100%;
+}
+
+.review .heading {
+	padding-top: 2rem;
 }
 
 .review .box-container {
@@ -355,13 +352,12 @@ header .icons #menu-bars {
 }
 
 .footer .credit {
-	text-align: center;
-	border-top: .1rem solid rgba(0,0,0,.1);
-	font-size:2rem;
 	color: #fff;
-	padding:.5rem;
-	padding-top: 1.5rem;
-	margin-top: 1.5rem;
+	display: flex;
+	justify-content: center;	
+	padding:1.5rem 1rem;
+	font-size: 1.5rem;
+	margin-left: 1.5rem;
 }
 
 
