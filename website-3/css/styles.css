@@ -253,6 +253,7 @@ header .icons #menu-bars {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	gap:1.5rem;
+	margin-left: 10rem;
 }
 
 .footer .box-container .box h3 {
