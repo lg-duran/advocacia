@@ -168,6 +168,7 @@ header .icons #menu-bars {
 
 .operation .box-container {
 	display: flex;	
+	align-items: center;
 }
 
 .operation .box-container .box {
@@ -361,6 +362,38 @@ header .icons #menu-bars {
 }
 
 
+@media screen and (max-width:1920px) {
+
+	#operation {
+		width: 100%;
+	}
+	
+	.operation h3, .operation p {
+		text-align: center;
+	}
+	
+	.operation p {
+		margin-top: 2.5rem;
+	}
+	
+	.operation .box-container {
+		display: flex;	
+		align-items: center;
+	}
+	
+	.operation .box-container .box {
+		margin-top: 2.5rem;	
+		height: 20rem;
+		width: 20rem;	
+		margin-left: 30rem;	
+		cursor: pointer;
+	}
+
+	.about .logo img {	
+		margin-left: 80rem;	
+	}
+	
+}
 
 
 
