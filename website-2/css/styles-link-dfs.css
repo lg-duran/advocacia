@@ -31,7 +31,6 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	z-index: 1000;
-    border-bottom: 1px solid #fff;
 }
 
 section {
@@ -75,52 +74,29 @@ header .icons #menu-bars {
 	display: none;
 }
 
-.home .home-slider .slide {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	gap:2rem;
+.home .box-container .box .title{
+	font-size: 3rem;
 	padding-top: 9rem;
-    height: 90rem;
-    background-color: #fff;
-    color: var(--blue);
-    text-align: justify;
+	color: var(--blue);
 }
 
-.home .home-slider .slide .content {
-	flex: 1 1 45rem;
-}
-
-.home .home-slider .slide .image {
-	flex: 1 1 45rem;
-}
-
-.home .home-slider .slide .image img {
+.home .box-container .box .image img {
+	padding-top: .5rem;
 	width: 100%;
 }
 
-.home .home-slider .slide .content span {
-	color: var(--green);
-	font-size: 2.5rem;
-}
-
-.home .home-slider .slide .content h3 {
-	color: var(--black);
-	font-size: 7rem;
-}
-
-.home .home-slider .slide .content p {
-	color: var(--ligth-color);
+.home .box-container .box .box-content {
+	display: inline-block;
+	text-align: justify;
+	flex-wrap: wrap;
+	gap:2rem;
+	padding-top: 9rem;
+    height: 20rem;
+    background-color: #fff;
+    color: var(--blue);    
 	font-size: 2rem;
-	padding: .5rem 0;
-	line-height: 1.5;
 }
 
-.home .home-slider .slide .content .requirements{
-    font-size: 1.8rem;
-}
-
-
-.swiper-pagination-bullet-active {
-	background: var(--orange);
+.home .box-container .box .box-content span{
+	font-weight: bold;
 }
